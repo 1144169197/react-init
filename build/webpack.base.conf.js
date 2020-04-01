@@ -14,7 +14,7 @@ function resolve (dir) {
 
 module.exports = {
 	entry: {
-		app: ['./src/js/index.js'],	//入口文件
+		app: ['./src/index.js'],	//入口文件
 		babel: ['babel-polyfill'], //babel-polyfill 和redux 单独打包减小app.js 的打包体积 用于配合externals
 		redux: ['redux', 'react-redux'],
 	},
@@ -85,7 +85,7 @@ module.exports = {
 		}),
 	],
 	// 单独提取出 react 减小打包文件大小
-	externals: {
+	/* externals: {
         'react-router': {
             amd: 'react-router',
             root: 'ReactRouter',
@@ -104,5 +104,5 @@ module.exports = {
             commonjs: 'react-dom',
             commonjs2: 'react-dom'
         }
-    }
+    } */
 }
