@@ -10,8 +10,6 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-
-
 module.exports = {
 	entry: {
 		app: ['./src/index.js'],	//入口文件
