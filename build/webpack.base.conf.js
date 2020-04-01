@@ -28,6 +28,19 @@ module.exports = {
 		extensions: ['.js', '.json'],
 		symlinks: false
 	},
+	// 配置全局使用
+	plugins: [
+		new webpack.ProvidePlugin({
+			"React": "react",
+			"ReactDOM": "react-dom",
+			"_": "lodash",
+			"classnames":"classnames"
+		}),
+		//extract css into its own file
+		new ExtractTextPlugin({
+			filename: utils.assetsPath('css/[name].[contenthash].css')
+		}),
+	],
 	module: {
 		rules: [
 			{
@@ -68,18 +81,5 @@ module.exports = {
             //     use: ExtractTextPlugin.extract({ use: extractCssLoaders, fallback: 'style-loader' }),
             // }
 		]
-	},
-	// 配置全局使用
-	plugins: [
-		new webpack.ProvidePlugin({
-			"React": "react",
-			"ReactDOM": "react-dom",
-			"_": "lodash",
-			"classnames":"classnames"
-		}),
-		//extract css into its own file
-		new ExtractTextPlugin({
-			filename: utils.assetsPath('css/[name].[contenthash].css')
-		}),
-	]
+	}
 }
