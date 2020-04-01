@@ -21,7 +21,7 @@ exports.cssLoaders = function (options) {
 			minimize: process.env.NODE_ENV === 'production',
 			sourceMap: options.sourceMap,
 			modules: true,
-			localIdentName: '[local]--[hash:base64:6]',	//class 名字 代替
+			localIdentName: '[local]--[hash:base64:6]',
 		}
 	}
 

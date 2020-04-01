@@ -81,26 +81,5 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename: utils.assetsPath('css/[name].[contenthash].css')
 		}),
-	],
-	// 单独提取出 react 减小打包文件大小
-	/* externals: {
-        'react-router': {
-            amd: 'react-router',
-            root: 'ReactRouter',
-            commonjs: 'react-router',
-            commonjs2: 'react-router'
-        },
-        react: {
-            amd: 'react',
-            root: 'React',
-            commonjs: 'react',
-            commonjs2: 'react'
-        },
-        'react-dom': {
-            amd: 'react-dom',
-            root: 'ReactDOM',
-            commonjs: 'react-dom',
-            commonjs2: 'react-dom'
-        }
-    } */
+	]
 }

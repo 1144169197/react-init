@@ -5,17 +5,6 @@
 const path = require('path')
 
 module.exports = {
-  // 提取出的文件链接
-  externalsJs_dev:[
-    'https://cdn.bootcss.com/react/16.0.0/umd/react.development.js',
-    'https://cdn.bootcss.com/react-dom/16.0.0/umd/react-dom.development.js',
-    'https://cdn.bootcss.com/react-router/4.2.0/react-router.js'
-  ],
-  externalsJs_prod: [
-    'https://cdn.bootcss.com/react/16.0.0/umd/react.production.min.js',
-    'https://cdn.bootcss.com/react-dom/16.0.0/umd/react-dom.production.min.js',
-    'https://cdn.bootcss.com/react-router/4.2.0/react-router.min.js'
-  ],
   title: 'react-init', //标题
   dev: {
 

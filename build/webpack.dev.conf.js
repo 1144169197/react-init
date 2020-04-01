@@ -57,7 +57,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: path.resolve(__dirname, '../src/index.html'),
       inject: true,
-	  //js: config.externalsJs_dev,	// 开发环境是config.externalsJs_prod
 	  favicon: './static/favicon.ico'
     }),
     // copy custom static assets

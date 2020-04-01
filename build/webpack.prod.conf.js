@@ -65,7 +65,6 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: config.build.index,
       template: path.resolve(__dirname, '../src/index.html'),
       inject: true,
-	  //js: config.externalsJs_dev,	// 开发环境是config.externalsJs_prod
 	  favicon: './static/favicon.ico',
       minify: {
         removeComments: true,
